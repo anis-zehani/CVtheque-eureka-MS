@@ -23,7 +23,7 @@ spec:
         ports:
         - containerPort: 8761
       imagePullSecrets:
-      - name: gitlab-secrets-eureka-MS
+      - name: gitlab-secrets-eureka-ms
 ---
 apiVersion: v1
 kind: Service
