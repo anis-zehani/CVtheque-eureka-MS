@@ -19,11 +19,11 @@ spec:
       containers:
       - name: eureka-container
         image: registry.gitlab.com/gitlabodix/cvtheque-eureka-ms-prod
-      imagePullSecrets:
-      - name: gitlab-secrets
         imagePullPolicy: Always
         ports:
         - containerPort: 8761
+      imagePullSecrets:
+      - name: gitlab-secrets
 ---
 apiVersion: v1
 kind: Service
