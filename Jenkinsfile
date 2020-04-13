@@ -15,13 +15,13 @@ pipeline {
 
     stage('Ansible CI') {
       steps {
-        sh 'sudo ansible-playbook -i /home/odix/Devops/ansible/hosts /home/odix/Devops/ansible/eureka-MS/eureka-MS-playbook-ci.yml;'
+        sh 'ansible-playbook -i /home/odix/Devops/ansible/hosts /home/odix/Devops/ansible/eureka-MS/eureka-MS-playbook-ci.yml;'
       }
     }
 
     stage('Ansible CD') {
       steps {
-        sh 'sudo ansible-playbook -i /home/odix/Devops/ansible/hosts /home/odix/Devops/ansible/eureka-MS/eureka-MS-playbook-cd.yml;'
+        sh 'ansible-playbook -i /home/odix/Devops/ansible/hosts /home/odix/Devops/ansible/eureka-MS/eureka-MS-playbook-cd.yml;'
       }
     }
 
