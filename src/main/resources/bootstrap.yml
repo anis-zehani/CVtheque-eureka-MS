@@ -7,3 +7,10 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://35.208.29.149:8761/eureka
+  instance:
+    nonSecurePortEnabled: true
+    nonSecurePort: 8761
+
+
