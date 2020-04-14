@@ -21,7 +21,7 @@ pipeline {
 
     stage('Ansible CD') {
       steps {
-        sh 'sudo ansible-playbook -i /home/odix/Devops/ansible/hosts /home/odix/Devops/ansible/eureka-MS/eureka-MS-playbook-cd.yml;'
+        echo 'Image Eureka est sur Gitlab'
       }
     }
 
